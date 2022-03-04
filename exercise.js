@@ -1,5 +1,5 @@
 async function getWithFetch() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("http://localhost:3000/posts");
   const finalRes = await res.json();
   finalRes.splice(10);
   return finalRes;
